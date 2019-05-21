@@ -5,7 +5,7 @@ Azure JS base image with npm lib support. Will recieve multiPart post -> Create 
 2. Get Multi Part Decode Base64 Image that was encoded by MultiPart. 
 3. Pass URL to Cognitive Service Endpoint
 4. Get TAGS formatt and retunr response
-5.
 
-TO-DO:
+
+# TO-DO:
 - Determine how to store the Image. Since we technically can store as Base64 and not worry about storage options inside a DB but is that best for using Images. Since blob exist best option is probably to store as a flat Image file decode to proper Image format.
