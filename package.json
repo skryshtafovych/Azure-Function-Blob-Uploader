@@ -1,0 +1,12 @@
+{
+  "name": "lotteryDocker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "parse-multipart": "^1.0.4",
+    "@azure/storage-blob": "^10.0.0-preview",
+    "@types/dotenv": "^4.0.3",
+    "dotenv": "^6.0.0"
+  }
+}
