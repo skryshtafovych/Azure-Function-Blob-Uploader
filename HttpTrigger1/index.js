@@ -30,7 +30,7 @@ module.exports = function(context, req) {
 showContainerNames();
 
 
-    if (req.query.name || (req.body && req.body.name)) {
+    if ( (req.body && req.body)) {
         context.res = {
             // status defaults to 200 */
             body: "Sup Dude " + (req.body || req.body)
