@@ -31,6 +31,7 @@ showContainerNames();
 
 
     if ( (req.body && req.body)) {
+        console.log("Getting file i think"+req.file)
         context.res = {
             // status defaults to 200 */
             body: "Sup Dude " + (req.body || req.body)
