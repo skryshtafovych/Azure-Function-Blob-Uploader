@@ -33,7 +33,7 @@ showContainerNames();
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
             // status defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
+            body: "Sup Dude " + (req.query.name || req.body.name)
         };
     }
     else {
