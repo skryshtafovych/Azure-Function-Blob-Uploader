@@ -1,5 +1,8 @@
 # Azure-Function-Blob-Uploader
-Azure JS base image with npm lib support. Will recieve multiPart post -> Create Blob -> Return URL of blob
+
+If you can configure the Azure Logic app to Have a connector to gitHub or Azure Dev Ops that is Best. Since we can have . deploy happen anytime there is a commit to master.
+
+- Will recieve multiPart post -> Create Blob -> Return URL of blob
 
 1. Post to Azure Cloud Funciton EndPoint to process Image and Save into Blob in order for us to Have valid URL to Pass to our Cognitive Service. We use multi part Form POST to get Image to EndPoint.
 2. Get Multi Part Decode Base64 Image that was encoded by MultiPart. 
