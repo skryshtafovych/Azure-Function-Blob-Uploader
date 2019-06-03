@@ -30,7 +30,7 @@ module.exports = function(context, req) {
 showContainerNames();
 
 
-    if ( (req.body && req.body)) {
+    if ( !!req.body ) {
         console.log("Getting file i think"+req.file)
         context.res = {
             // status defaults to 200 */
