@@ -11,6 +11,10 @@ const {
 
 const fs = require("fs");
 const path = require("path");
+const fileUpload = require('express-fileupload');
+var express = require('express');
+const app = express();
+
 
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
@@ -25,10 +29,18 @@ const ONE_MINUTE = 60 * 1000;
 
 
 module.exports = function(context, req) {
+
+    app.use(fileUpload());
+
     context.log('Node.js HTTP trigger function processed a request. RequestUri=%s', req.originalUrl);
 
-showContainerNames();
+//showContainerNames();
 
+context.log('==========================================================================================');
+console.log("Getting file i think"+req.files.image)
+
+
+fs.writeFile('image.png',req.files,tempoTRAP);
 
     if ( !!req.body ) {
         console.log("Getting file i think"+req.file)
@@ -48,6 +60,10 @@ showContainerNames();
 
 
 
+function tempoTRAP(){
+    console.log("T=================================================================================")
+
+}
 
 async function showContainerNames(aborter, serviceURL) {
 
