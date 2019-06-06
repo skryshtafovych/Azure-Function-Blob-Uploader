@@ -9,11 +9,7 @@ const {
     uploadFileToBlockBlob
 } = require('@azure/storage-blob');
 
-const fs = require("fs");
-const path = require("path");
-const fileUpload = require('express-fileupload');
-var express = require('express');
-const app = express();
+
 
 
 if (process.env.NODE_ENV !== "production") {
@@ -29,15 +25,19 @@ const ONE_MINUTE = 60 * 1000;
 
 
 module.exports = function(context, req) {
+    const fs = require("fs");
+    const path = require("path");
+    const fileUpload = require('express-fileupload');
 
-    app.use(fileUpload());
+
+
 
     context.log('Node.js HTTP trigger function processed a request. RequestUri=%s', req.originalUrl);
 
 //showContainerNames();
 
 context.log('==========================================================================================');
-console.log("Getting file i think"+req.files.image)
+console.log("Getting file i think"+req.files)
 
 
 fs.writeFile('image.png',req.files,tempoTRAP);
