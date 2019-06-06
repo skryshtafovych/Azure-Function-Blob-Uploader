@@ -9,6 +9,7 @@
     "@types/dotenv": "^4.0.3",
     "dotenv": "^6.0.0",
     "express-fileupload": "1.1.4",
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "azure-function-express": "2.0.0"
   }
 }

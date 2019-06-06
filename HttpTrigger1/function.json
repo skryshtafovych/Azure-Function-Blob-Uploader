@@ -5,6 +5,7 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
+      "route"     : "{*segments}",
       "dependencies": {
     "parse-multipart": "^1.0.4"
   },
