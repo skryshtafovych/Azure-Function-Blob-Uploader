@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "89db559a-a90d-4d86-9910-516450432b7f",
+		"name": "VisionAzure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://prod-119.westus.logic.azure.com:443/workflows/95848703a47a4ca5ae221ee5a412c33d/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AdSzshABs7eYY43tzwy72hBKjEByN-25nU-_Kawf3HQ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"imageURL\":\"https://images.pexels.com/photos/2275221/pexels-photo-2275221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260\"}"
+				},
+				"url": {
+					"raw": "https://prod-119.westus.logic.azure.com:443/workflows/95848703a47a4ca5ae221ee5a412c33d/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AdSzshABs7eYY43tzwy72hBKjEByN-25nU-_Kawf3HQ",
+					"protocol": "https",
+					"host": [
+						"prod-119",
+						"westus",
+						"logic",
+						"azure",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"workflows",
+						"95848703a47a4ca5ae221ee5a412c33d",
+						"triggers",
+						"manual",
+						"paths",
+						"invoke"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2016-10-01"
+						},
+						{
+							"key": "sp",
+							"value": "%2Ftriggers%2Fmanual%2Frun"
+						},
+						{
+							"key": "sv",
+							"value": "1.0"
+						},
+						{
+							"key": "sig",
+							"value": "AdSzshABs7eYY43tzwy72hBKjEByN-25nU-_Kawf3HQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://prod-118.westus.logic.azure.com:443/workflows/0f0d10b8211f4c699916b8967d106655/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SbNvVvBBp-hMdgPjHHouqikaccO06LZPFGK-M4Z367M",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://prod-118.westus.logic.azure.com:443/workflows/0f0d10b8211f4c699916b8967d106655/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SbNvVvBBp-hMdgPjHHouqikaccO06LZPFGK-M4Z367M",
+					"protocol": "https",
+					"host": [
+						"prod-118",
+						"westus",
+						"logic",
+						"azure",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"workflows",
+						"0f0d10b8211f4c699916b8967d106655",
+						"triggers",
+						"manual",
+						"paths",
+						"invoke"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2016-10-01"
+						},
+						{
+							"key": "sp",
+							"value": "%2Ftriggers%2Fmanual%2Frun"
+						},
+						{
+							"key": "sv",
+							"value": "1.0"
+						},
+						{
+							"key": "sig",
+							"value": "SbNvVvBBp-hMdgPjHHouqikaccO06LZPFGK-M4Z367M"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://imagetaggersk.azurewebsites.net/api/HttpTrigger1?code=kiDtwb9aPf8xpUvlvHCAE2PCc7HUzZkj9T1sjWBWMqzjABY9YKtgmQ==",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://imagetaggersk.azurewebsites.net/api/HttpTrigger1?code=kiDtwb9aPf8xpUvlvHCAE2PCc7HUzZkj9T1sjWBWMqzjABY9YKtgmQ==",
+					"protocol": "https",
+					"host": [
+						"imagetaggersk",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"HttpTrigger1"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "kiDtwb9aPf8xpUvlvHCAE2PCc7HUzZkj9T1sjWBWMqzjABY9YKtgmQ=="
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
